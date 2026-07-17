@@ -1,0 +1,66 @@
+{
+  "name": "LexAssist AI",
+  "short_name": "LexAssist",
+  "version": "1.0.0",
+  "description": "LexAssist AI is an AI-powered Multi-Agent Legal Aid System built using IBM watsonx.ai, IBM Granite Models, IBM Orchestrate, LangFlow, and Retrieval-Augmented Generation (RAG). It provides legal information retrieval, contract analysis, compliance checking, case law research, and conversational legal assistance.",
+  "author": {
+    "name": "Onkar Ananda Garde",
+    "email": "gardeonkar25@gmail.com"
+  },
+  "category": "Legal Technology",
+  "domain": "Artificial Intelligence | LegalTech",
+  "problem_statement": "AI Legal Aid Multi-Agent System",
+  "features": [
+    "Legal Information Retrieval (RAG)",
+    "Contract Review",
+    "Compliance Checking",
+    "Case Law Research",
+    "Conversational Legal Assistant",
+    "Multi-Agent Architecture",
+    "Document Parsing",
+    "Risk Analysis"
+  ],
+  "agents": [
+    "Legal Knowledge Agent",
+    "Contract Review Agent",
+    "Compliance Checker Agent",
+    "Case Research Agent"
+  ],
+  "technology": [
+    "IBM watsonx.ai",
+    "IBM Granite 4.0-8B-Instruct",
+    "IBM Orchestrate",
+    "IBM LangFlow",
+    "Python",
+    "FastAPI",
+    "React.js",
+    "Tailwind CSS",
+    "LangChain",
+    "FAISS",
+    "IBM Cloud"
+  ],
+  "rag": {
+    "vector_database": "FAISS",
+    "knowledge_sources": [
+      "Constitution of India",
+      "BNS",
+      "BNSS",
+      "BSA",
+      "Companies Act",
+      "Consumer Protection Act",
+      "GST",
+      "Income Tax Act",
+      "IT Act",
+      "Labour Laws",
+      "Supreme Court Judgments",
+      "High Court Judgments",
+      "Government Notifications"
+    ]
+  },
+  "deployment": {
+    "platform": "IBM Cloud",
+    "ai_platform": "IBM watsonx.ai",
+    "orchestration": "IBM Orchestrate"
+  },
+  "license": "MIT"
+}
