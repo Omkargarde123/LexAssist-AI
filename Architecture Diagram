@@ -1,0 +1,67 @@
+# 🏗️ Architecture Diagram
+
+```mermaid
+flowchart TB
+
+A[👤 User]
+B[🌐 React Web Dashboard]
+C[⚡ FastAPI Backend]
+D[🔄 IBM Orchestrate]
+E[🔀 IBM LangFlow]
+F[🤖 IBM Granite 4.0-8B-Instruct]
+G[📚 RAG Engine]
+H[(🗂️ FAISS / ChromaDB)]
+I[📄 Legal Knowledge Base]
+
+J[⚖️ Legal Knowledge Agent]
+K[📑 Contract Review Agent]
+L[✅ Compliance Checker Agent]
+M[🏛️ Case Research Agent]
+
+N[📜 Constitution of India]
+O[📘 BNS / BNSS / BSA]
+P[🏢 Companies Act]
+Q[🛡️ Consumer Protection Act]
+R[💻 IT Act]
+S[💰 GST & Income Tax]
+T[👨‍⚖️ Supreme Court Judgments]
+U[🏛️ High Court Judgments]
+V[📢 Government Notifications]
+
+W[📊 Legal Dashboard]
+X[📄 PDF Report]
+Y[💬 Conversational Legal Assistant]
+
+A --> B
+B --> C
+C --> D
+D --> E
+
+E --> J
+E --> K
+E --> L
+E --> M
+
+J --> G
+K --> G
+L --> G
+M --> G
+
+G --> H
+H --> I
+
+I --> N
+I --> O
+I --> P
+I --> Q
+I --> R
+I --> S
+I --> T
+I --> U
+I --> V
+
+G --> F
+F --> Y
+Y --> W
+W --> X
+```
