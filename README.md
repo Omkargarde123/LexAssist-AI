@@ -24,14 +24,8 @@ In total, **293 indexed passages** are embedded directly in the page and searche
 
 ## Running it
 
-Just open `index.html` in any browser — no build step, no server, no dependencies.
+Just open `lexAssist-AI` in any browser — no build step, no server, no dependencies.
 
-To serve it locally:
-
-```bash
-python3 -m http.server 8000
-# then visit http://localhost:8000
-```
 
 ## Disclaimer
 
