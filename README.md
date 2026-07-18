@@ -1,187 +1,38 @@
-# ⚖️ LexAssist AI – AI-Powered Multi-Agent Legal Aid System
+# LexAssist AI — Live Demo
 
-## Overview
+A fully client-side, offline-capable Indian legal information assistant. No API key, no backend, no network calls — everything runs in the browser against an embedded knowledge base.
 
-LexAssist AI is an intelligent AI-powered Legal Aid Multi-Agent System developed using IBM watsonx.ai, IBM Granite Models, IBM Orchestrate, LangFlow, and Retrieval-Augmented Generation (RAG).
+## What's inside
 
-The platform helps individuals, businesses, and legal professionals understand legal documents, analyze contracts, verify compliance, retrieve legal information, and research case laws through specialized AI agents.
+The knowledge base is parsed from a 15-chapter "AI Legal Knowledge Base" reference document covering:
 
-> **Disclaimer:** LexAssist AI provides educational legal information and is **not a substitute for professional legal advice.**
+- The Constitution of India
+- Bharatiya Nyaya Sanhita (BNS), Bharatiya Nagarik Suraksha Sanhita (BNSS), Bharatiya Sakshya Adhiniyam (BSA)
+- Consumer Protection Act, Companies Act, IT Act, GST, Income Tax, Labour Codes
+- 37 landmark Supreme Court / High Court judgments
+- 122 FAQ entries
+- Government notifications & compliance guidance
 
----
+In total, **293 indexed passages** are embedded directly in the page and searched with on-device keyword matching (no LLM, no API).
 
-## Problem Statement
+## Features
 
-**AI Legal Aid Multi-Agent System**
+- **AI Legal Chat** — ask a question, get an answer assembled from the closest matching knowledge base passages, with citations.
+- **Contract Review** — paste contract text; a heuristic scanner flags missing standard clauses (termination, indemnity, liability, IP, dispute resolution, etc.) and risky one-sided language.
+- **Compliance Checker** — checklist-based gap check against GST, Companies Act, Labour Codes, or IT Act requirements.
+- **Case Research** — search the embedded landmark judgments (Facts / Issue / Decision / Significance).
 
-Traditional legal services are expensive and time-consuming. Many people struggle to understand contracts, legal rights, regulations, and compliance requirements.
+## Running it
 
-LexAssist AI simplifies legal assistance using Generative AI, RAG, and Multi-Agent Architecture.
+Just open `index.html` in any browser — no build step, no server, no dependencies.
 
----
-
-# Features
-
-### 📚 Legal Information Retrieval (RAG)
-
-- Constitution of India
-- BNS, BNSS & BSA
-- Consumer Protection Act
-- Companies Act
-- IT Act
-- Labour Laws
-- GST
-- Income Tax
-- Government Notifications
-- Court Judgments
-
----
-
-### 📄 Contract Review Agent
-
-- Clause Detection
-- Risk Identification
-- Missing Clauses
-- Obligation Extraction
-- Deadline Detection
-
----
-
-### ✅ Compliance Checker Agent
-
-- Company Compliance
-- GST Compliance
-- Labour Compliance
-- Regulatory Analysis
-- Risk Assessment
-
----
-
-### ⚖️ Case Research Agent
-
-- Supreme Court Judgments
-- High Court Judgments
-- Legal Precedents
-- Similar Case Retrieval
-
----
-
-### 💬 Conversational Legal Assistant
-
-- Natural Language Chat
-- Easy Legal Explanations
-- Context-Aware Responses
-- Personalized Legal Guidance
-
----
-
-## Multi-Agent Architecture
-
-- Legal Knowledge Agent
-- Contract Review Agent
-- Compliance Checker Agent
-- Case Research Agent
-
----
-
-## Tech Stack
-
-- IBM watsonx.ai
-- IBM Granite 4.0-8B-Instruct
-- IBM Orchestrate
-- IBM LangFlow
-- Python
-- FastAPI
-- React.js
-- Tailwind CSS
-- FAISS / ChromaDB
-- LangChain
-- IBM Cloud
-
----
-
-## RAG Knowledge Sources
-
-- Constitution of India
-- Bharatiya Nyaya Sanhita (BNS)
-- Bharatiya Nagarik Suraksha Sanhita (BNSS)
-- Bharatiya Sakshya Adhiniyam (BSA)
-- Companies Act
-- Consumer Protection Act
-- GST
-- Income Tax Act
-- IT Act
-- Labour Codes
-- Supreme Court Judgments
-- High Court Judgments
-- Government Notifications
-
----
-
-## Folder Structure
-
-```
-LexAssist-AI/
-│
-├── backend/
-├── frontend/
-├── docs/
-├── screenshots/
-├── architecture/
-├── app.json
-├── README.md
-├── ProblemStatement.pdf
-├── ProjectPresentation.pptx
-└── requirements.txt
-```
-
----
-
-## Installation
+To serve it locally:
 
 ```bash
-git clone https://github.com/yourusername/LexAssist-AI.git
-
-cd LexAssist-AI
-
-pip install -r requirements.txt
-
-python app.py
+python3 -m http.server 8000
+# then visit http://localhost:8000
 ```
 
----
+## Disclaimer
 
-## IBM Technologies Used
-
-- IBM Granite Models
-- IBM watsonx.ai
-- IBM Orchestrate
-- IBM LangFlow
-- IBM Cloud
-
----
-
-## Future Scope
-
-- Voice-enabled Legal Assistant
-- Multilingual Legal Support
-- Integration with India Code
-- Live Court Judgment Retrieval
-- Government Gazette Integration
-- OCR-based Legal Document Processing
-
----
-
-## Author
-
-**Onkar Ananda Garde**
-
-Computer Engineering
-
-Keystone School of Engineering
-
----
-
-## License
-
-MIT License
+This tool provides general legal information for educational purposes only. It is not a substitute for advice from a licensed lawyer. Always verify current provisions against official government sources.
